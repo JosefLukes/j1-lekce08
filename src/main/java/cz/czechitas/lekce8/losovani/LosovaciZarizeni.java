@@ -80,7 +80,8 @@ public class LosovaciZarizeni {
    */
   public IntStream losujSeznamSudychCiselJakoMapa(int minimum, int maximum, int pocet) {
     return random.ints(pocet, minimum / 2, maximum / 2)
-            .map(cislo -> cislo * 2);
+            .map(cislo -> cislo * 2)
+            ;
   }
 
   /**
